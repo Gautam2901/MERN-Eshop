@@ -23,7 +23,7 @@ export default function SignIn(){
     }
     catch(err){
         console.log(err);
-        toast.error("Nahi pehchana bhai, tu kaun?");
+        toast.error("Sign-up First");
     }
     }
     return<>
@@ -31,7 +31,7 @@ export default function SignIn(){
     <div className="container d-flex justify-content-center align-items-center" style={{height:"80vh"}}>
         <div className="sign-in-form" style={{width:"30%", boxShadow:"10px 10px 10px 10px grey"}}>
             <h5 className="bg-dark text-white text-center p-2">Sign In</h5>
-            <form onSubmit={signInUser} className="p-3 d-flex flex-column align-items-center">
+        <form onSubmit={signInUser} className="p-3 d-flex flex-column align-items-center">
             <input ref={emailInput} type="text" placeholder="Enter your Email" className="mt-2 form-control"/>
             <input ref={passwordInput} type="password" placeholder="Enter you password" className="mt-2 form-control"/>
             <button type="submit" className="btn btn-secondary mt-2" style={{width:"100%"}}>Sign-In</button>
